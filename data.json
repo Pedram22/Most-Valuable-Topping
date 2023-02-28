@@ -1,0 +1,22 @@
+{ 
+    "condiments": {
+
+  "ketchup": {
+        "itemArray": 0,
+        "numVotes": 0
+    },
+    "mustard": {
+
+        "itemArray": 1,
+        "numVotes": 0
+    },
+    "relish": {
+        "itemArray": 2,
+        "numVotes": 0
+    },
+    "jalapeno": { 
+        "itemArray": 3,
+        "numVotes": 0
+    }
+}
+}
