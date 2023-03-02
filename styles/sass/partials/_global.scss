@@ -1,0 +1,38 @@
+body {
+    background-image: url("../assets/baseballField.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3.cohortHeader {
+    font-size: 3.4rem;
+    letter-spacing: -.15rem;
+    text-transform: uppercase;
+    color: #ec3017;
+    font-style: italic;
+}
+
+h1.titleHeader {
+    font-size: 8rem;
+    letter-spacing: -.3rem;
+    color: #ec3017;
+    font-style: italic;
+}
+
+h2.subHeader {
+    font-size: 3.43rem;
+    letter-spacing: -.15rem;
+    text-transform: uppercase;
+    color: #ec3017;
+    font-style: italic;
+}
+
+span.emoji {
+    position: relative;
+    bottom: 17px;
+}
+
+.emoji {
+    font-size: 3.5rem;
+}
