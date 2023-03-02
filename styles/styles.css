@@ -225,3 +225,85 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  background-image: url("../assets/baseballField.jpg");
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h3.cohortHeader {
+  font-size: 3.4rem;
+  letter-spacing: -0.15rem;
+  text-transform: uppercase;
+  color: #ec3017;
+  font-style: italic;
+}
+
+h1.titleHeader {
+  font-size: 8rem;
+  letter-spacing: -0.3rem;
+  color: #ec3017;
+  font-style: italic;
+}
+
+h2.subHeader {
+  font-size: 3.43rem;
+  letter-spacing: -0.15rem;
+  text-transform: uppercase;
+  color: #ec3017;
+  font-style: italic;
+}
+
+span.emoji {
+  position: relative;
+  bottom: 17px;
+}
+
+.emoji {
+  font-size: 3.5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.headerText {
+  padding-right: 60px;
+  background-color: #fee101;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 2px 3px #000;
+          box-shadow: 1px 2px 3px #000;
+}
+
+.cohortHeaderDiv {
+  position: relative;
+  bottom: -70px;
+  left: 40px;
+}
+
+.titleHeaderDiv {
+  position: relative;
+  left: 30px;
+}
+
+.subHeaderDiv {
+  position: relative;
+  top: -67px;
+  left: 24px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #ec3017;
+}
+
+p.footerText {
+  text-align: center;
+}
