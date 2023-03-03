@@ -1,21 +1,19 @@
-// @use
-
-// $bgcolor: #fee101;
-
 html {
     font-size: 62.5%;
   }
 
 .headerText {
-    background-color: $bgcolor;
+    background-color: #fee101;
+    // height: 26rem;
     border-radius: 20px;
-    box-shadow: 1px 2px 3px #000;
+    box-shadow: 2px 3px 5px #000;
+    padding-right: 70px;
 }
 
 .cohortHeaderDiv {
     position: relative;
-    bottom: -70px;
-    left: 40px;
+    bottom: -108px;
+    left: 44px;
 }
 
 .titleHeaderDiv {
@@ -25,7 +23,7 @@ html {
 
 .subHeaderDiv {
     position: relative;
-    top:-67px;
+    top:-107px;
     left: 24px;
 }
 
