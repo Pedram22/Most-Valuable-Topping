@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="wrapper flexContainer">
+        <div class="wrapper flexContainHeader">
             <div class="headerText">
                 <div class="cohortHeaderDiv">
                     <h3 class="cohortHeader">Cohort 48</h3>
@@ -26,39 +26,41 @@
             </div>
         </div>
     </header>
-    <section class="condimentsSection">
-        <div class="wrapper flexContainer">
-            <ul class="condimentUl">
-                <li class="ketchupLi">
-                    Ketchup
-                </li>
-                <li class="mustardLi">
-                    Mustard
-                </li>
-                <li class="relishLi">
-                    Relish
-                </li>
-                <li class="jalapenoLi">
-                    Jalepeno
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="votingSection">
-        <div class="wrapper flexContainer">
-            <div class="voteRow">
-                <div class="hotdogOneDiv">
-                    <img src="./assets/hot-dog.jpg">
-                </div>
-                <div class="voteDiv">
-                    <button class="voteButton">
-                </div>
-                <div class="hotdogTwoDiv">
-                    <img src="./assets/hot-dog.jpg">
-                </div>
+   
+    <section class="userSelection">
+        <form action="submit">
+        <div class="wrapper flexContainMain">
+            <div class="condiment">
+                <label>
+                    <input type="radio" name="condiment" value="ketchup">
+                    <img src="./assets/ketchup.jpg" alt="ketchup"><p>ketchup</p>
+                </label>
+            </div>
+            <div class="condiment">
+                <label>
+                    <input type="radio" name="condiment" value="mustard">
+                    <img src="./assets/mustard.jpg" alt="mustard"><p>mustard</p>
+                </label>
+            </div>
+            <div class="condiment">
+                <label>
+                    <input type="radio" name="condiment" value="relish">
+                    <img src="./assets/relish.jpg" alt="relish"><p>relish</p>
+                </label>
+            </div>
+            <div class="condiment">
+                <label>
+                    <input type="radio" name="condiment" value="jalapeno">
+                    <img src="./assets/jalapenos.jpg" alt="jalapeno"><p>jalapeno</p>
+                </label>
             </div>
         </div>
+            <div class="vote">
+            <button id="submit">vote</button>
+            </div>
+        </form>
     </section>
+
     <footer>
         <p class="footerText">© 2023 S&P Interactive Inc. | Created at <a href="https://junocollege.com/">Juno College</a></p>
     </footer>
