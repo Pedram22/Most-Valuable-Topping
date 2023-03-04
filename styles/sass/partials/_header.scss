@@ -3,13 +3,14 @@
     background-color: #fee101;
     border-radius: 20px;
     box-shadow: 1px 2px 3px #000;
+    height: auto;
 }
 
 
 .cohortHeaderDiv {
     position: relative;
-    bottom: -70px;
-    left: 40px;
+    bottom: -110px;
+    left: 46px;
 }
 
 .titleHeaderDiv {
@@ -19,12 +20,12 @@
 
 .subHeaderDiv {
     position: relative;
-    top:-67px;
+    top:-104px;
     left: 24px;
 }
 
 h3.cohortHeader {
-    font-size: 3.4rem;
+    font-size: 5.2rem;
     letter-spacing: -.15rem;
     text-transform: uppercase;
     color: #ec3017;
@@ -32,14 +33,14 @@ h3.cohortHeader {
 }
 
 h1.titleHeader {
-    font-size: 8rem;
+    font-size: 11.8rem;
     letter-spacing: -.3rem;
     color: #ec3017;
     font-style: italic;
 }
 
 h2.subHeader {
-    font-size: 3.43rem;
+    font-size: 4.8rem;
     letter-spacing: -.15rem;
     text-transform: uppercase;
     color: #ec3017;
@@ -53,4 +54,12 @@ span.emoji {
 
 .emoji {
     font-size: 3.5rem;
+}
+
+span.emojiMedia {
+    display: none;
+}
+
+span.favouriteText {
+    text-decoration: underline;
 }

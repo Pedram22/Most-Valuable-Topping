@@ -1,7 +1,19 @@
 
+.userSelection {
+    // display: none;
+
+}
+
+.userResults {
+    display: none;
+}
+
 .wrapper.flexContainMain {
     display: flex;
     justify-content: space-around;
+    background: rgba(0, 0, 0, .5 );
+    padding: 30px;
+    border-radius: 20px;
     // display: grid;
     // grid-template-columns: repeat( 2, 1fr);
     img {
@@ -28,13 +40,19 @@
   }
   
   [type=radio]:checked + img {
-    outline: 4px solid #EC3017;
+    outline: 4px solid #FEE101;
   }
+
+.condiment {
+    margin-bottom: -30px;
+}
 
 .vote {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 button {
     background-color: #FEE101;
@@ -53,4 +71,41 @@ button {
 button:hover {
     background-color: #EC3017;
     color: #FEE101;
+}
+
+.wrapper.flexContainResults {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        max-width: 175px;
+        border-radius: 20px;
+        box-shadow: 1px 2px 3px #000;
+    } 
+    p {
+        text-transform: uppercase;
+        color: #FEE101;
+        font-size: 2.5rem;
+        text-align: center;
+    } 
+}
+
+.resultsBoxBg {
+    background: rgba(0, 0, 0, .5 );
+    border-radius: 20px;
+}
+
+.resultsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.condimentResult {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    p {
+        padding:20px;
+    }
 }

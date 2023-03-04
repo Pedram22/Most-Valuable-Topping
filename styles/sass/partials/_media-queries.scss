@@ -1,0 +1,139 @@
+@media screen and (max-width: 1324px) {
+
+    .subHeaderDiv {
+        position: relative;
+        top: -86px;
+        left: 24px;
+      }
+
+      
+    .titleHeaderDiv {
+        position: relative;
+        top:30px;
+        left: 30px;
+        bottom: 100px;
+        line-height: .8;
+    }
+
+    .subHeaderDiv {
+        position: relative;
+        top: -36px;
+        left: 24px;
+      }
+      .cohortHeaderDiv {
+        position: relative;
+        bottom: -116px;
+        left: 46px;
+      }
+}
+
+@media screen and (max-width: 1040px) {
+
+    .wrapper.flexContainHeader {
+        width:60%
+    }
+
+    h1.titleHeader {
+        font-size: 5.8rem;
+      }
+
+      h2.subHeader {
+        font-size: 2.48rem;
+    }
+
+    h3.cohortHeader {
+        font-size: 2.4rem;
+      }
+
+      .cohortHeaderDiv {
+        bottom: -75px;
+        left: 38px;
+      }
+
+      .subHeaderDiv {
+        position: relative;
+        top: -12px;
+        left: 25px;
+      }
+
+    span.emoji {
+        position: relative;
+        bottom: 17px;
+    }
+    
+    .emoji {
+        font-size: 2.5rem;
+    }
+
+      .wrapper.flexContainMain {
+        flex-direction: column;
+        width: 260px;
+          p {
+            padding-bottom: 30px;
+          }
+          img {
+            margin-bottom: -18px;
+          }
+      }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  .subHeaderDiv {
+    top: -3px;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .wrapper.flexContainHeader {
+    width: 100%;
+  }
+
+  .headerTextContainer {
+    margin-top: -90px;
+  }
+
+  .headerText {
+    padding-top: 1px;
+    border-radius: 0px;
+  }
+
+  .subHeaderDiv {
+    top: -14px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .subHeaderDiv {
+    top: -4px;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+
+span.emoji {
+  bottom: 8px;
+}
+
+  .emoji {
+    font-size: 2.2rem;
+}
+
+  span.emojiMedia {
+    display: inline;
+      position: relative;
+      bottom: 8px;
+  }
+
+  .emojiMedia {
+    font-size: 2.2rem;
+}
+
+}
