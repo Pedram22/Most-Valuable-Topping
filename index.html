@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    
 </head>
 <body>
+    
     <header>
         <div class="wrapper flexContainHeader">
             <div class="headerText">
@@ -30,39 +32,39 @@
     </header>
    
     <section class="userSelection">
-        <form action="submit">
+        <form action="submit" name="testy" id="condimentsContainer">
         <div class="wrapper flexContainMain">
             <div class="condiment">
                 <label>
-                    <input type="radio" name="condiment" value="ketchup">
+                    <input type="radio" class="condimentClass" name="condiment" value="ketchup" id="ketchupId">
                     <img src="./assets/ketchup.jpg" alt="ketchup displayed in a small ramican">
                     <p>ketchup</p>
                 </label>
             </div>
             <div class="condiment">
                 <label>
-                    <input type="radio" name="condiment" value="mustard">
+                    <input type="radio" class="condimentClass" name="condiment" value="mustard" id="mustardId">
                     <img src="./assets/mustard.jpg" alt="mustard displayed in a wooden ramican">
                     <p>mustard</p>
                 </label>
             </div>
             <div class="condiment">
                 <label>
-                    <input type="radio" name="condiment" value="relish">
+                    <input type="radio" class="condimentClass" name="condiment" value="relish" id="relishId">
                     <img src="./assets/relish.jpg" alt="relish displayed in a small bowl">
                     <p>relish</p>
                 </label>
             </div>
             <div class="condiment">
                 <label>
-                    <input type="radio" name="condiment" value="jalapeno">
+                    <input type="radio" class="condimentClass" name="condiment" value="jalapeno" id="jalapenoId">
                     <img src="./assets/jalapenos.jpg" alt="jalapenos displayed in a ramican">
                     <p>jalapeno</p>
                 </label>
             </div>
         </div>
             <div class="vote">
-            <button id="submit">vote</button>
+            <button id="submitButton">vote</button>
             </div>
         </form>
     </section>
@@ -72,19 +74,31 @@
                 <div class="resultsBoxBg">
                     <div class="condimentResult">
                         <img src="./assets/ketchup.jpg" alt="ketchup displayed in a small ramican">
-                        <p>ketchup</p>
+                        <div class="resultTxt">
+                            <p>ketchup</p>
+                            <p>votes</p>
+                        </div>
                     </div>
                     <div class="condimentResult">
                         <img src="./assets/mustard.jpg" alt="mustard displayed in a wooden ramican">
-                        <p>mustard</p>
+                        <div class="resultTxt">
+                            <p>mustard</p>
+                            <p>votes</p>
+                        </div>
                     </div>
                     <div class="condimentResult">
                         <img src="./assets/relish.jpg" alt="relish displayed in a small bowl">
-                        <p>relish</p>
+                        <div class="resultTxt">
+                            <p>relish</p>
+                            <p>votes</p>
+                        </div>
                     </div>
                     <div class="condimentResult">
                         <img src="./assets/jalapenos.jpg" alt="jalapenos displayed in a ramican">
-                        <p>jalapeno</p>
+                        <div class="resultTxt">
+                            <p>jalapeno</p>
+                            <p>votes</p>
+                        </div>
                     </div>
                 </div>
             </div>

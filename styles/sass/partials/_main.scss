@@ -1,13 +1,4 @@
 
-// .userSelection {
-//     display: none;
-
-// }
-
-.userResults {
-    display: none;
-}
-
 .wrapper.flexContainMain {
     display: flex;
     justify-content: space-around;
@@ -108,4 +99,23 @@ button:hover {
     p {
         padding:20px;
     }
+}
+
+.resultTxt p {
+    padding: 0px 0px 0px 20px;
+}
+
+// This is the section where the two toggling DIVs are styled
+
+.userResults {
+    display: none;
+    margin-bottom: 75px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
 }

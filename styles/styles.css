@@ -313,10 +313,6 @@ span.favouriteText {
   text-decoration: underline;
 }
 
-.userResults {
-  display: none;
-}
-
 .wrapper.flexContainMain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,6 +441,23 @@ button:hover {
 }
 .condimentResult p {
   padding: 20px;
+}
+
+.resultTxt p {
+  padding: 0px 0px 0px 20px;
+}
+
+.userResults {
+  display: none;
+  margin-bottom: 75px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
 }
 
 footer {
