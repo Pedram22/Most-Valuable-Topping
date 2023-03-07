@@ -290,7 +290,7 @@ h1.titleHeader {
 }
 
 h2.subHeader {
-  font-size: 4.8rem;
+  font-size: 4.6rem;
   letter-spacing: -0.15rem;
   text-transform: uppercase;
   color: #EC3017;
@@ -536,7 +536,7 @@ p.footerText {
     font-size: 5.8rem;
   }
   h2.subHeader {
-    font-size: 2.48rem;
+    font-size: 2.35rem;
   }
   h3.cohortHeader {
     font-size: 2.4rem;
