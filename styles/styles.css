@@ -244,12 +244,12 @@ body {
 }
 
 a {
-  color: #fee101;
+  color: #FEE101;
 }
 
 .headerText {
   padding-right: 60px;
-  background-color: #fee101;
+  background-color: #FEE101;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 3px #000;
           box-shadow: 1px 2px 3px #000;
@@ -277,14 +277,14 @@ h3.cohortHeader {
   font-size: 5.2rem;
   letter-spacing: -0.15rem;
   text-transform: uppercase;
-  color: #ec3017;
+  color: #EC3017;
   font-style: italic;
 }
 
 h1.titleHeader {
   font-size: 11.8rem;
   letter-spacing: -0.3rem;
-  color: #ec3017;
+  color: #EC3017;
   font-style: italic;
 }
 
@@ -292,7 +292,7 @@ h2.subHeader {
   font-size: 4.8rem;
   letter-spacing: -0.15rem;
   text-transform: uppercase;
-  color: #ec3017;
+  color: #EC3017;
   font-style: italic;
 }
 
@@ -447,6 +447,11 @@ button:hover {
   padding: 0px 0px 0px 20px;
 }
 
+.voteTally {
+  background-color: #EC3017;
+  border-radius: 10px;
+}
+
 .userResults {
   display: none;
   margin-bottom: 75px;
@@ -469,7 +474,7 @@ footer {
 
 p.footerText {
   text-align: center;
-  color: #fff;
+  color: #FFF;
   font-size: 1.5rem;
 }
 

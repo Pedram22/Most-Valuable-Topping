@@ -5,13 +5,13 @@
 
 import app from './firebase.js'
 
-import { ref, get, getDatabase, onValue, child, push, set } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js"
+import { ref, get, getDatabase, onValue, child, push, set, update } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js"
 
 
 // Call getDatabase() and ref() to create a reference to the Firebase database.
 const database = getDatabase(app);
 const dbRef = ref(database);
-const condimentsRef = ref(database, '/condiments');
+const condimentsRef = ref(database,'/condiments');
 
 // Here are the variables for the selection DIV and the results DIV in our HTML page
 const resultsArea = document.querySelector(".userResults");
@@ -19,49 +19,85 @@ const selectionArea = document.querySelector(".userSelection");
 const formVariable = document.getElementById("condimentsContainer");
 const buttonVariable = document.getElementById("submitButton");
 const choiceVariable = document.getElementsByClassName("condimentClass");
-let condimentChoiceVar = ""
+let userChoice = ""
+let initListOfCondiments = {}
+const ketchupVotes = document.getElementById("ketchupVotes");
+const mustardVotes = document.getElementById("mustardVotes");
+const relishVotes = document.getElementById("relishVotes");
+const jalapenoVotes = document.getElementById("jalapenoVotes");
 
 onValue(condimentsRef, function(data){
 
-    const listOfCondiments = data.val();
-    console.log(listOfCondiments);
+    initListOfCondiments = data.val();
+    console.log(initListOfCondiments);
 })
 
-function nameId(e){
+// function nameId(e){
 
     
-    if (e.target.type === "radio") {
-        condimentChoiceVar = e.target.value;
-    }
+    // if (e.target.type === "radio") {
+        // condimentChoiceVar = e.target.value;
+    // }
 
-    console.log(condimentChoiceVar)
+    // console.log(condimentChoiceVar)
 
     // now we have voting choice variable, when we click button we want to send the variable to the proper spot in fb by taking variable
     // voteNum=numVotes+1
     // use set
 
-}
+// }
 
 
-document.addEventListener("click", nameId);
+// document.addEventListener("click", nameId);
 
 // for(let i=0;i=3; i++){
-//     choiceVariable[i].addEventListener("change",nameId)
-// }
-// choiceVariable.addEventListener("checked", nameId);
-
-// const totalVotes= {
-
-// }
-
-// This is the function which will swap divs when form is submitted
-
+    //     choiceVariable[i].addEventListener("change",nameId)
+    // }
+    // choiceVariable.addEventListener("checked", nameId);
+    
+    // const totalVotes= {
+        
+        //  }
+        
+        // This is the function which will swap divs when form is submitted
+        
 function divSwap(e) {
-    e.preventDefault ()
-    console.log (resultsArea.classList)
-    resultsArea.classList.add ("displayBlock")
-    selectionArea.classList.add ("displayNone") 
+        e.preventDefault ()
+        const userChoice = document.querySelector('input[name="condiment"]:checked').value;
+        // console.log(userChoice)
+        resultsArea.classList.add ("displayBlock");
+        selectionArea.classList.add ("displayNone");
+        let currentVote = initListOfCondiments[userChoice];
+        // console.log(currentVote)
+        const voteTally = currentVote + 1;
+        // console.log(voteTally)
+        initListOfCondiments[userChoice] = voteTally;
+        // let minVal = 0;
+        // for( i=0; i>= initListOfCondiments.length; i++) {
+            // let largestVal = 0;
+        // }
+        const sortedVote = Object.values(initListOfCondiments).sort();
+        console.log(sortedVote)
+        
+        
+        const voteResults = () => {
+            const voteRef = ref(database,`${userChoice}`)
+            return update(voteRef, 3)
+        }
+    
+        // update(child("condiments", `/${userChoice}`), 3)
+        // voteResults()
+        // set(ref(dbRef, "/" + userChoice), {numVotes:voteTally});
+        
+        // const voteRef = dbRef.database().ref("condiments/")
+        // console.log(voteRef)
+        ketchupVotes.innerHTML = initListOfCondiments["ketchup"];
+        mustardVotes.innerHTML = initListOfCondiments["mustard"];
+        relishVotes.innerHTML = initListOfCondiments["relish"];
+        jalapenoVotes.innerHTML = initListOfCondiments["jalapeno"];
 }
+
+
 
 buttonVariable.addEventListener("click", divSwap);
 
@@ -101,13 +137,11 @@ buttonVariable.addEventListener("click", divSwap);
 
 // Add an eventListener to the submit button to listen for ‘submit’. On ‘submit’:
 // condimentsForm.addEventListener('submit', getVote)
-// function getVote() {
 
-//     const userChoice = document.querySelector('input[name="condiment"]:checked').value;
-// }
+
     // Prevent the submit from causing the page to refresh (using the event.preventDefault() method).
 
-// console.log(submit)
+// console.log(userChoice)
 
 // function addToVotes (condimentId) {
 
