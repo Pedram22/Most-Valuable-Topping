@@ -38,7 +38,7 @@
       }
 
       h2.subHeader {
-        font-size: 2.48rem;
+        font-size: 2.35rem;
     }
 
     h3.cohortHeader {
@@ -65,16 +65,16 @@
         font-size: 2.5rem;
     }
 
-      .wrapper.flexContainMain {
-        flex-direction: column;
-        width: 260px;
-          p {
-            padding-bottom: 30px;
-          }
-          img {
-            margin-bottom: -18px;
-          }
-      }
+      // .wrapper.flexContainMain {
+      //   flex-direction: column;
+      //   width: 260px;
+      //     p {
+      //       padding-bottom: 30px;
+      //     }
+      //     img {
+      //       margin-bottom: -18px;
+      //     }
+      // }
 
 }
 
@@ -85,12 +85,27 @@
     top: -3px;
   }
 
+  .wrapper.flexContainMain {
+    flex-direction: column;
+    width: 260px;
+      p {
+        padding-bottom: 30px;
+      }
+      img {
+        margin-bottom: -18px;
+      }
+  }
+
 }
 
 @media screen and (max-width: 720px) {
 
   .wrapper.flexContainHeader {
     width: 100%;
+  }
+
+  .headerText {
+    margin-top: 0px;
   }
 
   .headerTextContainer {
@@ -105,6 +120,17 @@
   .subHeaderDiv {
     top: -14px;
   }
+
+  .resultsBoxTop {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.resultsBoxBottom {
+    display: flex;
+    flex-direction: column;
+}
 
 }
 
@@ -134,6 +160,37 @@ span.emoji {
 
   .emojiMedia {
     font-size: 2.2rem;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+  .wrapper.flexContainMain {
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .condiment {
+    display: flex;
+    justify-content: center;
+  }
+
+  h4.bodyHeading {
+    font-size: 2rem;
+  }
+
+  .resultTxt p {
+    font-size: 1rem;
+}
+
+.wrapper.flexContainResults {
+
+    img {
+      max-width: 125px;
+    }
 }
 
 }

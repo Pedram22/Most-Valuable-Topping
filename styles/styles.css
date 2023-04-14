@@ -249,6 +249,7 @@ a {
 
 .headerText {
   padding-right: 60px;
+  margin-top: -80px;
   background-color: #FEE101;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 3px #000;
@@ -289,7 +290,7 @@ h1.titleHeader {
 }
 
 h2.subHeader {
-  font-size: 4.8rem;
+  font-size: 4.6rem;
   letter-spacing: -0.15rem;
   text-transform: uppercase;
   color: #EC3017;
@@ -412,6 +413,13 @@ button:hover {
   text-align: center;
 }
 
+h4.bodyHeading {
+  text-transform: uppercase;
+  color: #FEE101;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .resultsBoxBg {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -428,6 +436,24 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.resultsBoxTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.resultsBoxBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .condimentResult {
@@ -528,7 +554,7 @@ p.footerText {
     font-size: 5.8rem;
   }
   h2.subHeader {
-    font-size: 2.48rem;
+    font-size: 2.35rem;
   }
   h3.cohortHeader {
     font-size: 2.4rem;
@@ -549,6 +575,11 @@ p.footerText {
   .emoji {
     font-size: 2.5rem;
   }
+}
+@media screen and (max-width: 1000px) {
+  .subHeaderDiv {
+    top: -3px;
+  }
   .wrapper.flexContainMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -563,14 +594,12 @@ p.footerText {
     margin-bottom: -18px;
   }
 }
-@media screen and (max-width: 1000px) {
-  .subHeaderDiv {
-    top: -3px;
-  }
-}
 @media screen and (max-width: 720px) {
   .wrapper.flexContainHeader {
     width: 100%;
+  }
+  .headerText {
+    margin-top: 0px;
   }
   .headerTextContainer {
     margin-top: -90px;
@@ -581,6 +610,24 @@ p.footerText {
   }
   .subHeaderDiv {
     top: -14px;
+  }
+  .resultsBoxTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resultsBoxBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (max-width: 600px) {
@@ -602,5 +649,27 @@ p.footerText {
   }
   .emojiMedia {
     font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper.flexContainMain img {
+    max-width: 150px;
+  }
+  .condiment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h4.bodyHeading {
+    font-size: 2rem;
+  }
+  .resultTxt p {
+    font-size: 1rem;
+  }
+  .wrapper.flexContainResults img {
+    max-width: 125px;
   }
 }

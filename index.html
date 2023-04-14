@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Most Valuable Topping</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
                         <h1 class="titleHeader">Most <span class="emoji">🌭</span> Valuable <span class="emoji">🌭</span> Topping <span class="emojiMedia">🌭</span></h1>
                     </div>
                     <div class="subHeaderDiv">
-                        <h2 class="subHeader">Choose your <span class="favouriteText">favourite</span> hot dog condiment</h2>
+                        <h2 class="subHeader">Vote for your <span class="favouriteText">favourite</span> hot dog condiment</h2>
                     </div>
                 </div>
             </div>
@@ -32,11 +32,9 @@
     </header>
    
     <section class="userSelection">
-<<<<<<< HEAD
+
         <form action="submit" id="condimentsContainer">
-=======
-        <form action="submit" name="testy" id="condimentsContainer">
->>>>>>> main
+
         <div class="wrapper flexContainMain">
             <div class="condiment">
                 <label>
@@ -48,7 +46,9 @@
             <div class="condiment">
                 <label>
                     <input type="radio" class="condimentClass" name="condiment" value="mustard" id="mustardId">
+
                     <img src="./assets/mustard.jpg" alt="mustard displayed in a mini wooden bowl">
+
                     <p>mustard</p>
                 </label>
             </div>
@@ -76,35 +76,41 @@
         <div class="wrapper flexContainResults">
             <div class="resultsBox">
                 <div class="resultsBoxBg">
-                    <div class="condimentResult">
-                        <img src="./assets/ketchup.jpg" alt="ketchup displayed in a small ramican">
-                        <div class="resultTxt">
-                            <p>ketchup</p>
-                            <p class="voteTally" id="ketchupVotes"></p>
+                    <div class="thankYouMessage">
+                        <h4 class="bodyHeading">Here are the results!</h4>
+                    </div>
+                    <div class="resultsBoxTop">
+                        <div class="condimentResult">
+                            <img src="./assets/ketchup.jpg" alt="ketchup    displayed in a small ramekin">
+                            <div class="resultTxt">
+                                <p>ketchup</p>
+                                <p class="voteTally" id="ketchupVotes"></p>
+                            </div>
+                        </div>
+                        <div class="condimentResult">
+                            <img src="./assets/mustard.jpg" alt="mustard displayed in a wooden bowl">
+                            <div class="resultTxt">
+                                <p>mustard</p>
+                                <p class="voteTally" id="mustardVotes"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="condimentResult">
-                        <img src="./assets/mustard.jpg" alt="mustard displayed in a wooden ramican">
-                        <div class="resultTxt">
-                            <p>mustard</p>
-                            <p class="voteTally" id="mustardVotes"></p>
+                    <div class="resultsBoxBottom">
+                        <div class="condimentResult">
+                            <img src="./assets/relish.jpg" alt="relish displayed in a small bowl">
+                            <div class="resultTxt">
+                                <p>relish</p>
+                                <p class="voteTally" id="relishVotes"></p>
+                            </div>
+                        </div>
+                        <div class="condimentResult">
+                            <img src="./assets/jalapenos.jpg" alt="jalapenos displayed in a ramekin">
+                            <div class="resultTxt">
+                                <p>jalapeno</p>
+                                <p class="voteTally" id="jalapenoVotes"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="condimentResult">
-                        <img src="./assets/relish.jpg" alt="relish displayed in a small bowl">
-                        <div class="resultTxt">
-                            <p>relish</p>
-                            <p class="voteTally" id="relishVotes"></p>
-                        </div>
-                    </div>
-                    <div class="condimentResult">
-                        <img src="./assets/jalapenos.jpg" alt="jalapenos displayed in a ramican">
-                        <div class="resultTxt">
-                            <p>jalapeno</p>
-                            <p class="voteTally" id="jalapenoVotes"></p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
