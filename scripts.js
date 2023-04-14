@@ -72,25 +72,21 @@ function divSwap(e) {
         const voteTally = currentVote + 1;
         // console.log(voteTally)
         initListOfCondiments[userChoice] = voteTally;
-        // let minVal = 0;
-        // for( i=0; i>= initListOfCondiments.length; i++) {
-            // let largestVal = 0;
-        // }
+      
         const sortedVote = Object.values(initListOfCondiments).sort();
         console.log(sortedVote)
         
         
-        const voteResults = () => {
-            const voteRef = ref(database,`${userChoice}`)
-            return update(voteRef, 3)
+        const voteResults = (voteNum) => {
+            const voteRef = ref(database,`condiments/${userChoice}`)
+            
+            return set(voteRef,voteNum)
         }
-    
-        // update(child("condiments", `/${userChoice}`), 3)
-        // voteResults()
-        // set(ref(dbRef, "/" + userChoice), {numVotes:voteTally});
+
+        voteResults(voteTally);
         
-        // const voteRef = dbRef.database().ref("condiments/")
-        // console.log(voteRef)
+    
+      
         ketchupVotes.innerHTML = initListOfCondiments["ketchup"];
         mustardVotes.innerHTML = initListOfCondiments["mustard"];
         relishVotes.innerHTML = initListOfCondiments["relish"];
