@@ -117,14 +117,23 @@ h4.bodyHeading {
         padding:20px;
     }
 }
-
-.resultTxt p {
-    padding: 0px 0px 0px 20px;
+.resultTxt {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    align-items: center;
+    justify-content: center;
+    padding: inherit;
+    p {
+        padding: 0px 0px 0px 20px;
+    }
 }
+ 
 
 .voteTally {
     background-color: #EC3017;
     border-radius: 10px;
+    width: 250px;
 }
 
 // This is the section where the two toggling DIVs are styled
